@@ -1,0 +1,107 @@
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: repeating-linear-gradient(to right, orange, red, blue, green);
+    height: 100vh;
+}
+
+.container {
+    box-sizing: border-box;
+    height: 100%;
+    border: 1px solid black;
+}
+/* utilities */
+.fa{
+    font-size: 1.5rem;
+    padding: 3px;
+}
+
+/* header */
+.header {
+   max-height: 15vh;
+}
+.clear{
+    margin: 5px;
+    float: right;
+}
+.clear:hover{
+    color: #f4f4f4;
+}
+
+/* list body  (content)*/
+.content {
+    background-image: repeating-linear-gradient(to top right, #7f7f,#f7f7, #ff77);
+    overflow: auto;
+    max-height: 65%;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    margin-top: 2rem;
+}
+#date{
+    margin: 0.5rem;
+    font-size: 1.7rem;
+}
+#title{
+    font-weight: 400;
+    text-align: center;
+}
+#list {
+    font-family: 'Mansalva', cursive;
+    list-style: none;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+    border-bottom: dotted black 1px;
+}
+.text{
+    font-size: 1.2rem;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color: #333;
+}
+
+/* check style unchecked*/
+.fa-circle-thin:hover{
+    color: #fff;
+}
+/* check style checked */
+.fa-check-circle{
+    color: #185c0b;
+}
+.fa-check-circle:hover{
+    color: orangered;
+}
+/* trash bin style */
+.fa-trash-o:hover{
+    color: #ff0f0f;
+}
+
+
+
+/* add To do section (footer) */
+.add-item{
+    padding-top: 0.5rem;
+    margin-top: 0.6rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+#input {
+    width: 70vw;
+    min-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#add:hover{
+    color: green;
+}
